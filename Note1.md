@@ -1,6 +1,5 @@
 # Start
 
-
 ## Welcome to ML
 
 It’s a science of getting computers to learn without being explicitly programmed.
@@ -20,8 +19,8 @@ Arthur Samuel(1959): Field of study that gives computers the ability to learn wi
 What he did was he had programmed the computer to play maybe tens of thousands of games against itself. And by watching what sorts of board positions tended to lead to wins, and what positions tended to lead to losses, the checkers playing program learned over time what are good or bad board positions. By trying to get to good and avoid bad positions, this program learned to get better and better at playing checkers. Because the computer had the patience to play tens of thousands of games against itself, it was able to get so much checkers playing experience that eventually it became a better player than Arthur himself.
 
  Question: If the checkers program had been allowed to play only ten games(instead of tens of thousands) against itself, a much smaller number of games, how would this have affected its performance?
- A Would have made it better
- B Would have made it worse
+ A. Would have made it better
+ B. Would have made it worse
 
  In general, the more opportunities you give a learning algorithm to learn, the better it will perform.
 
@@ -35,21 +34,21 @@ What he did was he had programmed the computer to play maybe tens of thousands o
 reinforcement learning
 practical advice for applying learning algorithms
 
-And so too in machine learning, making sure you have the tools is really important. And so it's making sure that you know how to appy the tools of machine learning effectively.
+And so too in machine learning, making sure you have the tools is really important. And so it's making sure that you know how to apply the tools of machine learning effectively.
 
 ## Supervised Learning Part 1
 
-I think 99% of the economic value created by machine learning today is through one tpye of machine learning, which is called supervised learning.
+I think 99% of the economic value created by machine learning today is through one type of machine learning, which is called supervised learning.
 
-refers to algorithms that learn x to y, or input to output mappings. The key characteristic of supervised learning is that you give your learning algorithm examples to learn from that include the right answers, where by right answer I mean the correct lable y for a given input x. And it's by seeingn correct pairs of input x and desired output label y that the learning algorithm eventually learns to take just the input alone without the output label and gives a reasonably accurate prediction or guess of the output.
+refers to algorithms that learn x to y, or input to output mappings. The key characteristic of supervised learning is that you give your learning algorithm examples to learn from that include the right answers, where by right answer I mean the correct label y for a given input x. And it's by seeing correct pairs of input x and desired output label y that the learning algorithm eventually learns to take just the input alone without the output label and gives a reasonably accurate prediction or guess of the output.
 
 One of the things you see later in this class is how you can decide whether to fit a straight line, a curve, or another function that is even more complex to the data.
 
-this housing price prediction is a particular type of supervised learning called regression. And by regression, I mean we're trying to predict a number from infinitely many possible numbers.
+this housing price prediction is a particular type of supervised learning called ==regression==. And by regression, I mean we're trying to predict a number from infinitely many possible numbers.
 
 ## Supervised learning Part 2
 
-Classification
+==Classification==
 
 One reason that this is different from regression is that we're trying to predict only a small number of possible outputs, or categories.
 
@@ -76,6 +75,30 @@ We call it unsupervised because we're not trying to supervise the algorithm to g
 
 An unsupervised learning algorithm might decide that the data can be assigned to two different groups or two different clusters. And so it might decide that there's one cluster or group over here, and there's another cluster or group over here.
 
-clustering algorithms: it places the unlabeled data into different clusters.
+==clustering algorithms==: it places the unlabeled data into different clusters.
 
-Clustering: Google news
+Clustering: 1Google news
+
+So the clustering algorithm is finding articles out of all the thousands of news articles on the internet that day, finding the articles that mention similar words and grouping them into clusters. What I mean is, there isn't an employee at Google News who's telling the algorithm to find articles that the word panda and twins and zoo to put them into the same cluster.
+
+2 Gene DNA microarray Instead what we're saying is, here's a bunch of data. I don't know what the different types of people are, but can you automatically find structure into data and automatically figure out what are the major types of individuals?
+
+So to summarize, a clustering algorithm, which is a type of unsupervised algorithm, takes data without labels and tries to automatically group them into clusters.
+
+## Unsupervised Learning Part 2
+
+==Anomaly detection==
+Find unusual data points: for fraud detection in the financial system
+
+==Dimensionality reduction==
+Take a big dataset and almost magically compress it to a much smaller dataset while losing as little information as possible.
+
+Question: Of the following examples, which would you address using an unsupervised learning algorithm?
+
+- [ ] Give email labeled as spam/not spam, learn a spam filter.
+- [x] Given a set of news articles found on the web, group them into sets of articles about the same story.
+- [x] Given a database of customer data, automatically discover market segments and group customers into different market segments.
+- [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not
+
+## Jupyter Notebooks
+
